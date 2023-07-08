@@ -1,189 +1,189 @@
 #about {
-    display: flex;
-    align-items: flex-start; /* Align content to the top */
-    justify-content: center;
-    overflow: hidden; /* Add overflow property to hide overflowing content */
-  }
+  display: flex;
+  align-items: flex-start; /* Align content to the top */
+  justify-content: center;
+  overflow: hidden; /* Add overflow property to hide overflowing content */
+}
+
+#about .container {
+  max-width: 1500px;
+  text-align: center;
+}
+
+#about h2 {
+margin-top: 0; /* Remove default margin */
+padding-left: 50%;
+font-size: 50px; /* Adjust font size as needed */
+}
+
+/* Center the title in mobile view */
+@media (max-width: 767px) {
+#about h2 {
+  padding-left: 0;
+  text-align: center;
+}
+}
+#about p {
+  margin-top: 20px; /* Add spacing below the heading */
+}
+
+#about .grid-item a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #ff9dd3;
+  color: #ff9dd3;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+#about .grid-item a:hover {
+  color: #000000;
   
-  #about .container {
-    max-width: 1500px;
-    text-align: center;
-  }
+  background-color: #ff9dd3;
+}
+
+
+
+#about .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+#about .grid-item {
+  background-color: #00000000;
+  padding: 10px;
+  width: 100%; /* Set the width of grid items to 100% */
+  display: flex; /* Add display flex */
+  justify-content: center; /* Align content horizontally to the center */
+  align-items: center; /* Align content vertically to the center */
+}
+#about .grid-item .image-container {
+  width: 340px; /* Adjust the size as per your preference */
+  height: 420px; /* Adjust the size as per your preference */
+  border-radius: 20px; /* Ensure the image covers the entire square area */
+  overflow: hidden;
+  transition: .3s;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 1.2);
+}
+
+
+#about .grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transform: rotate(0deg); /* Remove rotation from the img */
+  filter: grayscale(0.35);
+  transition: .6s;
   
-  #about h2 {
-  margin-top: 0; /* Remove default margin */
-  padding-left: 50%;
-  font-size: 50px; /* Adjust font size as needed */
+}
+
+#about .grid-item img:hover {
+  filter: grayscale(0);
+ 
+  transform: scale(1.1) rotate(1.5deg); /* Apply rotation only to the img */
+}
+#about .grid-item h3 {
+  margin-top: 0;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  #about .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
 
-  /* Center the title in mobile view */
-@media (max-width: 767px) {
-  #about h2 {
-    padding-left: 0;
-    text-align: center;
+  #about .grid-item {
+    grid-column: 1; /* Set grid items to occupy a single column */
+  }
+  
+  #about {
+    height: auto; /* Extend the height of the viewport to accommodate content */
   }
 }
-  #about p {
-    margin-top: 20px; /* Add spacing below the heading */
-  }
 
-  #about .grid-item a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: transparent;
-    border: 2px solid #ff9dd3;
-    color: #ff9dd3;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  }
-  
-  #about .grid-item a:hover {
-    color: #000000;
-    
-    background-color: #ff9dd3;
-  }
-  
-  
+#about p {
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-family: "Inconsolata", monospace;
+  font-weight: 400; /* Adjust the font weight as desired */
+  letter-spacing: 1px; /* Add letter spacing for a pixelated effect */
+  color: #fff;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 4px;
+}
 
-  #about .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-  
-  #about .grid-item {
-    background-color: #00000000;
-    padding: 10px;
-    width: 100%; /* Set the width of grid items to 100% */
-    display: flex; /* Add display flex */
-    justify-content: center; /* Align content horizontally to the center */
-    align-items: center; /* Align content vertically to the center */
-  }
-  #about .grid-item .image-container {
-    width: 340px; /* Adjust the size as per your preference */
-    height: 420px; /* Adjust the size as per your preference */
-    border-radius: 20px; /* Ensure the image covers the entire square area */
-    overflow: hidden;
-    transition: .3s;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 1.2);
-  }
-  
-  
-  #about .grid-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    cursor: pointer;
-    transform: rotate(0deg); /* Remove rotation from the img */
-    filter: grayscale(0.35);
-    transition: .6s;
 
-  }
-  
-  #about .grid-item img:hover {
-    filter: grayscale(0);
-    
-    transform: scale(1.1) rotate(1.5deg); /* Apply rotation only to the img */
-  }
-  #about .grid-item h3 {
-    margin-top: 0;
-  }
-  
-  /* Media query for mobile view */
-  @media (max-width: 768px) {
-    #about .grid-container {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-    }
-  
-    #about .grid-item {
-      grid-column: 1; /* Set grid items to occupy a single column */
-    }
-    
-    #about {
-      height: auto; /* Extend the height of the viewport to accommodate content */
-    }
-  }
+#about .grid-item p {
+  background: linear-gradient(to bottom right, #2c2c2c, #2c2c2c);
+  padding: 20px;
+  border-radius: 8px;
+  color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4); /* Add the shadow */
+}
 
-  #about p {
-    margin-bottom: 5px;
-    font-size: 15px;
-    font-family: "Inconsolata", monospace;
-    font-weight: 400; /* Adjust the font weight as desired */
-    letter-spacing: 1px; /* Add letter spacing for a pixelated effect */
-    color: #fff;
-    background-color: #222;
-    padding: 10px;
-    border-radius: 4px;
-  }
-  
-  
-  #about .grid-item p {
-    background: linear-gradient(to bottom right, #2c2c2c, #2c2c2c);
-    padding: 20px;
-    border-radius: 8px;
-    color: #ffffff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4); /* Add the shadow */
-  }
-  
-  
-  
 
-  @keyframes spriteAnimation {
-    0% { background-position: 0 0; }
-    100% { background-position: 1280px 0; } /* Adjust the pixel value based on your spritesheet */
-  }
+
+
+
+
+#about .grid-item .animation-container {
+  width: 96px;
+  height: 96px;
   
-  #about .grid-item .animation-container {
-    width: 32px;
-    height: 32px;
-    background-image: url("media/slime-spritesheet.png");
-    background-size: 160px 32px; /* Adjust the pixel dimensions to match your spritesheet */
-    animation: spriteAnimation 1s steps(5) infinite;
-    transform: scale(3); /* Scale up the container by a factor of 2 */
-    transform-origin: center; /* Set the transformation origin to the center */
-    image-rendering: pixelated; /* Maintain pixelated appearance while scaling */
-    margin-right: 50px;
-  }
+  /* Scale up the container by a factor of 2 */
+  image-rendering: pixelated; /* Maintain pixelated appearance while scaling */
+  
+}
 
-  #about .grid-item .animation-container2 {
-    width: 32px;
-    height: 32px;
-    background-image: url("media/Slime-pink.png");
-    background-size: 160px 32px; /* Adjust the pixel dimensions to match your spritesheet */
-    animation: spriteAnimation 1.5s steps(5) infinite;
-    transform: scale(3); /* Scale up the container by a factor of 2 */
-    transform-origin: center; /* Set the transformation origin to the center */
-    image-rendering: pixelated; /* Maintain pixelated appearance while scaling */
-    margin-right: 50px;
-  }
-  #about .grid-item .animation-container3 {
-    width: 32px;
-    height: 32px;
-    background-image: url("media/dark-slime.png");
-    background-size: 160px 32px; /* Adjust the pixel dimensions to match your spritesheet */
-    animation: spriteAnimation 0.5s steps(5) infinite;
-    transform: scale(3); /* Scale up the container by a factor of 2 */
-    transform-origin: center; /* Set the transformation origin to the center */
-    image-rendering: pixelated; /* Maintain pixelated appearance while scaling */
-    margin-right: 50px;
-  }
+#about .grid-item .animation-container{
+  width: 96px;
+  height: 96px;
+  filter: hue-rotate(45deg);
+  /* Scale up the container by a factor of 2 */
+  image-rendering: pixelated; /* Maintain pixelated appearance while scaling */
+  
+}
 
-  #about .grid-item .animation-container4 {
-    width: 32px;
-    height: 32px;
-    transform: scale(3); /* Scale up the container by a factor of 2 */
-    image-rendering: pixelated; /* Maintain pixelated appearance while scaling */
-   
-  }
 
+
+#about .grid-item .animation-container2 {
+  width: 96px;
+  height: 96px;
+  filter: hue-rotate(90deg);
+  /* Scale up the container by a factor of 2 */
+  image-rendering: pixelated; /* Maintain pixelated appearance while scaling */
  
+}
+#about .grid-item .animation-container3 {
+  width: 96px;
+  height: 96px;
+  filter: hue-rotate(250deg);
+   /* Scale up the container by a factor of 2 */
+  image-rendering: pixelated; /* Maintain pixelated appearance while scaling */
+ 
+}
 
-  
+#about .grid-item .animation-container4 {
+  width: 96px;
+  height: 96px;
+  filter: hue-rotate(320deg);
+   /* Scale up the container by a factor of 2 */
+  image-rendering: pixelated; /* Maintain pixelated appearance while scaling */
+ 
+}
 
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
 
