@@ -7,6 +7,7 @@
   <title>John Patrick Quintos | Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="projects.css">
   <link rel="stylesheet" href="about.css">  <!-- External CSS file to style your website -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-**************" crossorigin="anonymous" />
 
@@ -60,7 +61,7 @@
       <div class="grid-container">
         <div class="grid-item">
           <div class="image-container">
-            <img src="myimage.jpg" alt="Your Image">
+            <img src="myimages.jpg" alt="Your Image">
           </div>
         </div>
         <div class="grid-item">
@@ -71,9 +72,15 @@
         </div>
         <div class="grid-item">
            <!-- I want to put a 32x32 pixel spritesheet animation in these grid -->
-           <div class="animation-container"></div>
-           <div class="animation-container2"></div>
-           <div class="animation-container3"></div>
+           <div class="animation-container">
+            <img src="media/Slime-pink.gif" alt="Animated GIF">
+           </div>
+           <div class="animation-container2">
+            <img src="media/Slime-pink.gif" alt="Animated GIF">
+           </div>
+           <div class="animation-container3">
+            <img src="media/Slime-pink.gif" alt="Animated GIF">
+           </div>
            <div class="animation-container4">
              <img src="media/Slime-pink.gif" alt="Animated GIF">
            </div>
@@ -86,22 +93,39 @@
   
   <section id="portfolio">
     <div class="container">
-      <h2>Portfolio</h2>
+      <div class="portfolio-heading">
+        <h2>Portfolio</h2>
+      </div>
       <div class="portfolio-items">
         <!-- Add your portfolio items here -->
         <div class="portfolio-item">
           <img src="project1.jpg" alt="Project 1">
-          <h3>Project 1</h3>
-          <p>Description of project 1</p>
+          <div class="item-details">
+            <h3>Project 1</h3>
+            <p>Description of project 1</p>
+          </div>
         </div>
+  
         <div class="portfolio-item">
           <img src="project2.jpg" alt="Project 2">
-          <h3>Project 2</h3>
-          <p>Description of project 2</p>
+          <div class="item-details">
+            <h3>Project 2</h3>
+            <p>Description of project 2</p>
+          </div>
+        </div>
+  
+        <div class="portfolio-item">
+          <img src="project2.jpg" alt="Project 2">
+          <div class="item-details">
+            <h3>Project 2</h3>
+            <p>Description of project 2</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
+  
+  
 
   <section id="contact">
     <div class="container">

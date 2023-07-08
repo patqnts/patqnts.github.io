@@ -1,79 +1,78 @@
 header {
-    display: flex;
-    justify-content: flex-start;
-    padding: 25px 25px;
-    }
+  display: flex;
+  justify-content: flex-start;
+  padding: 25px 25px;
+  }
 
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    
-    color: #fff; /* Light text color for header */
-    z-index: 9999;
-    transition: box-shadow 0.3s ease-in-out; /* Add transition for smooth effect */
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   
-  header.shadow {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow effect when this class is applied */
-  }
-  
-  header nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-   
-  }
+  color: #fff; /* Light text color for header */
+  z-index: 9999;
+  transition: box-shadow 0.3s ease-in-out; /* Add transition for smooth effect */
+}
 
-  header nav ul li {
-    margin: 0 10px;
-  }
+header.shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow effect when this class is applied */
+}
 
-  header nav ul li a {
-   
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.67s ease;
-  }
-  
-  header nav ul li a:hover {
-    color: rgb(142, 204, 255); /* Change the color to maroon on hover */
-  }
-  
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
  
+}
 
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    padding: 5px 10px; /* Add padding to create spacing */
-  }
+header nav ul li {
+  margin: 0 10px;
+}
 
-  @media (max-width: 768px) {
-  header {
-    justify-content: center; /* Center align the navigation items */
-    padding: 15px; /* Reduce the padding for mobile view */
-  }
+header nav ul li a {
+ 
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.67s ease;
+}
 
-  header nav ul li {
-    margin-right: 10px; /* Adjust the spacing between navigation items */
-  }
+header nav ul li a:hover {
+  color: rgb(142, 204, 255); /* Change the color to maroon on hover */
 }
 
 
-  
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  padding: 5px 10px; /* Add padding to create spacing */
+}
+
+@media (max-width: 768px) {
+header {
+  justify-content: center; /* Center align the navigation items */
+  padding: 15px; /* Reduce the padding for mobile view */
+}
+
+header nav ul li {
+  margin-right: 10px; /* Adjust the spacing between navigation items */
+}
+}
+
+
