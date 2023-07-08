@@ -12,7 +12,9 @@ body {
   line-height: 1.6;
 }
 
-
+head {
+  text-align: center;
+}
 .container {
   max-width: 720px;
   margin: 0 auto;
@@ -21,7 +23,14 @@ body {
 
 
 section {
-  padding: 60px 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: scale(1);
+  opacity: 0; /* Initially hide sections */
+  transition: opacity 0.5s ease-in-out; /* Add transition effect for opacity change */
 }
 
 h1, h2, h3 {
@@ -42,23 +51,7 @@ p {
   margin-bottom: 20px;
 }
 
-.portfolio-items {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
 
-.portfolio-item {
-  background-color: #444;
-  padding: 20px;
-  text-align: center;
-  border-radius: 4px;
-}
-
-.portfolio-item img {
-  max-width: 100%;
-  margin-bottom: 10px;
-}
 
 .contact-form input,
 .contact-form textarea {
@@ -149,8 +142,8 @@ color: #e49999; /* Light red for itch.io */
 
 
 #home .container {
-height: 80vh; /* Adjust the value as per your preference */
-transform: scale(1.2);
+height: 10vh; /* Adjust the value as per your preference */
+
 display: flex;
 flex-direction: column;
 justify-content: center;

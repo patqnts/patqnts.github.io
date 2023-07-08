@@ -34,7 +34,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
   ScrollReveal().reveal(sections, {
     delay: 200,
-    distance: "50px",
+    distance: "10px",
     easing: "ease-in-out",
     origin: "bottom",
     opacity: 0,

@@ -10,22 +10,11 @@
   <link rel="stylesheet" href="projects.css">
   <link rel="stylesheet" href="about.css">  <!-- External CSS file to style your website -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-**************" crossorigin="anonymous" />
-
-  <style>
-    /* Add custom styles for full-page sections */
-    section {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      opacity: 0; /* Initially hide sections */
-      transition: opacity 0.5s ease-in-out; /* Add transition effect for opacity change */
-    }
-  </style>
 </head>
 <body>
   <header id="main-header">
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="hamburger"></label>
     <nav>
       <ul>
         <li><a href="#home">.home()</a></li>
@@ -34,8 +23,9 @@
         <li><a href="#contact">.contact()</a></li>
       </ul>
     </nav>
-    <span class="header-text">_pat.dev</span>
+    <span class="header-text">_patqnts</span>
   </header>
+  
   
 
   
@@ -68,8 +58,11 @@
           <p>I'm an aspiring software and game developer with a strong proficiency in C#. I specialize in game development using Unity, and I'm knowledgeable in HTML, CSS, and JavaScript for web development. I'm constantly expanding my skills and currently focused on furthering my expertise in web and software development. With a collaborative mindset and a passion for creating immersive experiences, I'm excited to connect with fellow developers and enthusiasts to explore new possibilities and drive innovation in the world of technology.</p>
         </div>
         <div class="grid-item">
-          <a href="link-to-your-resume.pdf">Download CV</a>
+          <a href="link-to-your-resume.pdf">
+             Download CV <i class="fas fa-file"></i>
+          </a>
         </div>
+        
         <div class="grid-item">
            <!-- I want to put a 32x32 pixel spritesheet animation in these grid -->
            <div class="animation-container">

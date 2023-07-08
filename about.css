@@ -29,6 +29,7 @@ font-size: 50px; /* Adjust font size as needed */
 
 #about .grid-item a {
   display: inline-block;
+  border-radius: 10%;
   padding: 10px 20px;
   background-color: transparent;
   border: 2px solid #ff9dd3;
