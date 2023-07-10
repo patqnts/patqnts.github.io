@@ -3,11 +3,12 @@
   align-items: flex-start; /* Align content to the top */
   justify-content: center;
   overflow: hidden; /* Add overflow property to hide overflowing content */
+  height: auto;
 }
 
 #about .container {
-  max-width: 1500px;
-  text-align: center;
+  max-width: 1520px;
+  justify-content: center;
 }
 
 #about h2 {
@@ -29,7 +30,7 @@ font-size: 50px; /* Adjust font size as needed */
 
 #about .grid-item a {
   display: inline-block;
-  border-radius: 10%;
+  border-radius: 12%;
   padding: 10px 20px;
   background-color: transparent;
   border: 2px solid #ff9dd3;
