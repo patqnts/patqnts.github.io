@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="projects.css">
+  <link rel="stylesheet" href="contact.css">
   <link rel="stylesheet" href="about.css">  <!-- External CSS file to style your website -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-**************" crossorigin="anonymous" />
 </head>
@@ -147,27 +148,31 @@
             </div>
           </div>
         </div>
-        
-
-       
- 
       </div>
     </div>
   </section>
   
-  
-
   <section id="contact">
     <div class="container">
-      <h2>Contact Me</h2>
-      <form>
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <textarea placeholder="Message"></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+        <h2>Contact Me</h2>
+        <form action="https://mail.google.com/mail/u/0/?view=cm" method="POST" target="_blank">
+            <input type="hidden" name="to" value="jhnpatqnts@gmail.com">
+            <input type="hidden" name="subject" value="Contact Form Submission">
+            <input type="hidden" name="message" value="">
+            <input type="hidden" name="cc" value="">
+            <input type="hidden" name="bcc" value="">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="body" placeholder="Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </div>
-  </section>
+</section>
+
+  
+
+  
 
  
   <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>

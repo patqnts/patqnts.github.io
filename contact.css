@@ -1,0 +1,63 @@
+/* Style the container */
+#contact .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: transparent; /* Set the background color to transparent */
+    box-shadow: 0 0 10px rgba(227, 255, 246, 0.1);
+  }
+  
+  /* Style the form elements */
+  .container input[type="text"],
+  .container input[type="email"],
+  .container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333333;
+    color: #ffffff;
+  }
+
+  .container textarea {
+    /* Increase the height of the textarea */
+    height: 200px;
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  /* Style the button */
+  .container button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #9c9c9c;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Responsive styles for mobile view */
+  @media only screen and (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+    
+    .container h2 {
+      font-size: 24px;
+    }
+    
+    .container input[type="text"],
+    .container input[type="email"],
+    .container textarea {
+      font-size: 14px;
+    }
+    
+    .container button[type="submit"] {
+      font-size: 14px;
+    }
+  }
+  
