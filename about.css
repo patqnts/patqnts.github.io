@@ -134,14 +134,7 @@ font-size: 50px; /* Adjust font size as needed */
 
 
 
-#about .grid-item .animation-container {
-  width: 96px;
-  height: 96px;
-  
-  /* Scale up the container by a factor of 2 */
-  image-rendering: pixelated; /* Maintain pixelated appearance while scaling */
-  
-}
+
 
 #about .grid-item .animation-container{
   width: 96px;
@@ -151,8 +144,6 @@ font-size: 50px; /* Adjust font size as needed */
   image-rendering: pixelated; /* Maintain pixelated appearance while scaling */
   
 }
-
-
 
 #about .grid-item .animation-container2 {
   width: 96px;
