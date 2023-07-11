@@ -18,9 +18,11 @@ head {
 .container {
   max-width: 720px;
   margin: 0 auto;
+  
+}
+#home .container{
   padding: 40px;
 }
-
 
 section {
   height: 100vh;

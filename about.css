@@ -3,12 +3,13 @@
   align-items: flex-start; /* Align content to the top */
   justify-content: center;
   overflow: hidden; /* Add overflow property to hide overflowing content */
-  height: auto;
+  
 }
 
 #about .container {
-  max-width: 1520px;
+  max-width: 1270px;
   justify-content: center;
+  height: auto;
 }
 
 #about h2 {
