@@ -7,16 +7,17 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, #222, #111);
+  background: #222;
   color: #fff;
   line-height: 1.6;
+  transition: background-color 0.5s ease;
 }
 
 head {
   text-align: center;
 }
 .container {
-  max-width: 720px;
+  max-width: 1080px;
   margin: 0 auto;
   
 }
@@ -31,21 +32,22 @@ section {
   justify-content: center;
   text-align: center;
   transform: scale(1);
-  opacity: 0; /* Initially hide sections */
+  
   transition: opacity 0.5s ease-in-out; /* Add transition effect for opacity change */
 }
 
 h1, h2, h3 {
   color: #fff;
+  transition: color 0.5s ease;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 70px;
   margin-bottom: 20px;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 50px;
   margin-bottom: 10px;
 }
 
@@ -95,7 +97,7 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
-  opacity: 0; /* Initially hide sections */
+ 
   transition: opacity 0.5s ease-in-out; /* Add transition effect for opacity change */
   
 }
@@ -145,7 +147,7 @@ color: #e49999; /* Light red for itch.io */
 
 #home .container {
 height: 10vh; /* Adjust the value as per your preference */
-
+transform: scale(1);
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -174,7 +176,7 @@ color: rgb(99, 99, 255);
 }
 
 span.game-developer {
-color: rgb(108, 255, 108);
+color: rgb(71, 165, 71);
 }
 
 #main-header {

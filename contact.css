@@ -5,7 +5,7 @@
     padding: 20px;
     border-radius: 10px;
     background-color: transparent; /* Set the background color to transparent */
-    box-shadow: 0 0 10px rgba(227, 255, 246, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
   
   /* Style the form elements */
@@ -19,6 +19,12 @@
     border: none;
     background-color: #333333;
     color: #ffffff;
+  }
+  .container.dark-mode input[type="text"],
+  .container.dark-mode input[type="email"],
+  .container.dark-mode textarea {
+    background-color: #f3f2f2;
+    color: #e7e7e7;
   }
 
   .container textarea {

@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="projects.css">
   <link rel="stylesheet" href="contact.css">
   <link rel="stylesheet" href="about.css">  <!-- External CSS file to style your website -->
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-**************" crossorigin="anonymous" />
 </head>
 <body>
@@ -23,6 +24,12 @@
         <li><a href="#portfolio">.projects()</a></li>
         <li><a href="#contact">.contact()</a></li>
       </ul>
+
+      <div class="toggle-button">
+        <input type="checkbox" id="day-night-toggle" checked/>
+        <label for="day-night-toggle"></label>
+      </div>
+    
     </nav>
   </header>
   
@@ -32,7 +39,8 @@
 
   <section id="home">
     <div class="container">
-      <h1>Hello!</h1>
+      <h1>Hello! 👋</h1>
+
       <h1>I'm <span class="orange-text">John Patrick Quintos</span></h1>
       <p>Aspiring <span class="software">Software</span> and <span class="game-developer">Game Developer</span>. Looking forward to work with you.</p>
 
@@ -55,8 +63,10 @@
           </div>
         </div>
         <div class="grid-item">
-          <p>I'm an aspiring software and game developer with a strong proficiency in C#. I specialize in game development using Unity, and I'm knowledgeable in HTML, CSS, and JavaScript for web development. I'm constantly expanding my skills and currently focused on furthering my expertise in web and software development. With a collaborative mindset and a passion for creating immersive experiences, I'm excited to connect with fellow developers and enthusiasts to explore new possibilities and drive innovation in the world of technology.</p>
+          <p>I'm an aspiring software and game developer with a strong proficiency in <i class="fab fa-csharp"></i> C#. I specialize in game development using <i class="fab fa-unity"></i> Unity, and I'm knowledgeable in <i class="fab fa-html5"></i> HTML, <i class="fab fa-css3"></i> CSS, and <i class="fab fa-js"></i> JavaScript for web development. I'm constantly expanding my skills and currently focused on furthering my expertise in web and software development. With a collaborative mindset and a passion for creating immersive experiences, I'm excited to connect with fellow developers and enthusiasts to explore new possibilities and drive innovation in the world of technology.</p>
         </div>
+        
+        
         <div class="grid-item">
           <a href="media/my_resume.pdf" target="_blank">
               Download Resume <i class="fas fa-file"></i>
@@ -99,7 +109,7 @@
               <img src="media/project1image.PNG" alt="Project 1">
               <div class="item-details">
                   <div class="item-details-content">
-                      <h3>Lifestyletravel.ph</h3>
+                      <h4>Lifestyletravel.ph</h3>
                       <div class="project-icons">
                           <i class="fab fa-wordpress" style="color: rgb(51, 138, 133);"></i>
                           <i class="fab fa-html5" style="color: orange;"></i>
@@ -120,7 +130,7 @@
           </div>
           <div class="item-details">
             <div class="item-details-content">
-              <h3>Augmented Reality Storybook</h3>
+              <h4>Augmented Reality Storybook</h3>
               <div class="project-icons">
                 <i class="fab fa-unity" style="color: rgb(255, 255, 255);"></i>
                 <i class="fab fa-cuttlefish" style="color: rgb(212, 0, 255);">#</i>
@@ -142,7 +152,7 @@
                 </div>
                 <div class="item-details">
                   <div class="item-details-content">
-                    <h3>Horned Struggler</h3>
+                    <h4>Horned Struggler</h4>
                     <div class="project-icons">
                       <i class="fab fa-unity" style="color: rgb(255, 255, 255);"></i>
                       <i class="fab fa-cuttlefish" style="color: rgb(212, 0, 255);">#</i>
@@ -174,6 +184,8 @@
     </div>
 </section>
   <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
   <script src="script.js"></script> <!-- External JavaScript file for scrolling and fading effect -->
 </body>
 </html>

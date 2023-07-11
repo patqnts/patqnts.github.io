@@ -35,6 +35,13 @@ header nav ul li {
 header nav ul li a {
   color: #fff;
   text-decoration: none;
+  font-weight: bold;
+  transition: color 0.67s ease;
+}
+header.dark-mode nav ul li a {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
   transition: color 0.67s ease;
 }
 
@@ -63,10 +70,10 @@ nav ul li a {
 .hamburger {
   display: none;
   position: fixed;
-  top: 15px;
+  top: 25px;
   left: 15px;
   width: 30px;
-  height: 30px;
+  height: 2px;
   cursor: pointer;
   z-index: 9999;
   background-color: transparent;
@@ -83,6 +90,13 @@ nav ul li a {
   width: 100%;
   background-color: #fff;
   transition: transform 0.3s ease;
+}
+
+.hamburger.dark-mode:before,
+.hamburger.dark-mode:after {
+  
+  background-color: #000000;
+  
 }
 
 .hamburger:before {
@@ -129,6 +143,10 @@ nav ul li a {
     transition: transform 0.3s ease;
   }
 
+  #menu-toggle.dark-mode:checked ~ nav ul {
+    background-color: #ffffff;
+  }
+
   #menu-toggle:checked ~ nav ul li {
     margin: 10px 0;
   }
@@ -148,3 +166,76 @@ nav ul li a {
     display: block;
   }
 }
+
+
+/* Toggle button for day and night mode */
+.toggle-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.toggle-button input[type="checkbox"] {
+  display: none;
+}
+
+.toggle-button label {
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  background-color: #ccc;
+  border-radius: 34px;
+  position: relative;
+  cursor: pointer;
+}
+
+.toggle-button label:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: 0.2s;
+}
+
+.toggle-button input[type="checkbox"]:checked + label {
+  background-color: #a65dd1;
+}
+
+.toggle-button input[type="checkbox"]:checked + label:after {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+  background-color: #fff;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background: #e7e7e7;
+  color: #333333;
+  
+}
+
+body.dark-mode p,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+  color: #333333;
+  transition: color 0.5s ease;
+}
+
+body.dark-mode .toggle-button label {
+  background-color: #b8e3ff;
+}
+
+body.dark-mode .toggle-button label:after {
+  background-color: #fffc41;
+}
+
+body.dark-mode .toggle-button input[type="checkbox"]:checked + label {
+  background-color: #4a477c;
+}
+
