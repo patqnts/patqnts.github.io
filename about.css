@@ -151,7 +151,7 @@ font-size: 50px; /* Adjust font size as needed */
 
 
 #about.dark-mode .grid-item p {
-  background: #f1f1f1;
+  background: hsl(0, 0%, 100%);
   padding: 20px;
   border-radius: 8px;
   color: #000000;

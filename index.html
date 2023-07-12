@@ -39,7 +39,8 @@
 
   <section id="home">
     <div class="container">
-      <h1>Hello! 👋</h1>
+      <h1>Hello! <span class="wave">👋</span></h1>
+
 
       <h1>I'm <span class="orange-text">John Patrick Quintos</span></h1>
       <p>Aspiring <span class="software">Software</span> and <span class="game-developer">Game Developer</span>. Looking forward to work with you.</p>
@@ -59,7 +60,8 @@
       <div class="grid-container">
         <div class="grid-item">
           <div class="image-container">
-            <img src="https://scontent.fmnl17-4.fna.fbcdn.net/v/t1.6435-9/60359695_2122190367893764_7423022441879830528_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=174925&_nc_eui2=AeHo7cbLFMvZrK--fs4gUJttjGDVgWaIJliMYNWBZogmWKsL2E0HHkE5MP0IRlFcs412Yf-nTQ3PX8gGEm5LY-6D&_nc_ohc=ptAtjf4RGMkAX98SVr8&_nc_ht=scontent.fmnl17-4.fna&oh=00_AfAnzHs2wH2OIa6yS78J81mc7a5Xwx9jPuoVs4JA5djvnQ&oe=64D48D13" alt="Your Image">
+            <img src="https://scontent.fmnl17-5.fna.fbcdn.net/v/t39.30808-6/346659050_275204754893305_5914072027508400750_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHHvv2YsI8pTCWX3Tq2C8sxnU5sbcD5G06dTmxtwPkbTjQeI9ih3z-hjxUq-TKrsDI0pUEk-Ptl6FcpCLsC6vSt&_nc_ohc=DBjHGA4wYCsAX8pe-ew&_nc_ht=scontent.fmnl17-5.fna&oh=00_AfBHk1KJyuyYYudoLhdAEbBXFsCnFU6BdIaUrju7O3Zg8w&oe=64B2B5BB" alt="Your Image">
+          
           </div>
         </div>
         <div class="grid-item">
@@ -74,21 +76,21 @@
       </div>
       
         
-        <div class="grid-item">
-           <!-- I want to put a 32x32 pixel spritesheet animation in these grid -->
-           <div class="animation-container">
-            <img src="media/Slime-pink.gif" alt="Animated GIF">
-           </div>
-           <div class="animation-container2">
-            <img src="media/slime2.gif" alt="Animated GIF">
-           </div>
-           <div class="animation-container3">
-            <img src="media/slime3.gif" alt="Animated GIF">
-           </div>
-           <div class="animation-container4">
-             <img src="media/slime4.gif" alt="Animated GIF">
-           </div>
+      <div class="grid-item">
+        <div class="animation-container">
+          <img src="media/Slime-pink.gif" alt="Animated GIF" onclick="animateAttack(this)">
         </div>
+        <div class="animation-container2">
+          <img src="media/slime2.gif" alt="Animated GIF" onclick="animateAttack(this)">
+        </div>
+        <div class="animation-container3">
+          <img src="media/slime3.gif" alt="Animated GIF" onclick="animateAttack(this)">
+        </div>
+        <div class="animation-container4">
+          <img src="media/slime4.gif" alt="Animated GIF" onclick="animateAttack(this)">
+        </div>
+      </div>
+      
 
       </div>
     </div>
@@ -97,8 +99,8 @@
   <section id="portfolio">
     <div class="container">
       <div class="portfolio-heading">
-        <h1>Portfolio</h1>
-        <p>-My notable projects- </p>
+        <h1>Projects</h1>
+        <p>- My notable works - </p>
       </div>
       <div class="portfolio-items">
         <!-- Add your portfolio items here -->

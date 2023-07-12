@@ -190,3 +190,24 @@ font-size: 24px;
 color: orange;
 font-family: "Open Sans", sans-serif;
 }
+
+.wave {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  transform-origin: 70% 70%;
+}
+
+.wave:hover {
+  animation-name: wave-animation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes wave-animation {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(10deg); }
+  40% { transform: rotate(-10deg); }
+  60% { transform: rotate(10deg); }
+  80% { transform: rotate(-10deg); }
+  100% { transform: rotate(0deg); }
+}
