@@ -42,18 +42,15 @@
 
   .item-details {
     position: absolute; /* Added to make the container positioning absolute */
-    bottom: 0; /* Positioned at the bottom of the portfolio item */
+    bottom: -5px; /* Positioned at the bottom of the portfolio item */
     width: 100%;
-    background-color: rgba(153, 153, 153, 0.7); /* Adjust the transparency as desired */
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the transparency as desired */
     padding: 10px;
     box-sizing: border-box;
     color: #fff;
     text-align: center;
   }
 
-  .item-details-content {
-    padding: 10px;
-  }
   #portfolio {
     height: auto;
   }
@@ -86,12 +83,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 1px;
+  margin-bottom: -22px;
 }
 
 .project-icons i {
   font-size: 25px;
-  margin: 0 10px;
+  margin: 0 1px;
   
 }
 
