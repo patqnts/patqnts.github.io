@@ -79,3 +79,4 @@ function animateAttack(element) {
     isAnimating = false;
   }, 1000); // Change the value (in milliseconds) to match the attack animation duration
 }
+

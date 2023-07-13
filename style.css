@@ -42,8 +42,10 @@ h1, h2, h3 {
 }
 
 h1 {
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 70px;
   margin-bottom: 20px;
+  
 }
 
 h2 {
@@ -51,7 +53,12 @@ h2 {
   margin-bottom: 10px;
 }
 
+h4{
+  font-family: 'Comfortaa', cursive;
+}
+
 p {
+  
   margin-bottom: 20px;
 }
 
@@ -168,7 +175,7 @@ margin-bottom: -20px; /* Adjust the margin value as desired */
 
 
 p {
-font-family: "Inconsolata", monospace;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 span.software {
