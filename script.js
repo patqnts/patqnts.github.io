@@ -53,7 +53,7 @@ var slideshowItems = document.getElementsByClassName('slideshow-items');
         // Fade out the current image
         image.fadeOut(200, function() {
           // Set the light mode image source
-          image.attr('src', 'https://scontent.fmnl17-5.fna.fbcdn.net/v/t39.30808-6/346659050_275204754893305_5914072027508400750_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHHvv2YsI8pTCWX3Tq2C8sxnU5sbcD5G06dTmxtwPkbTjQeI9ih3z-hjxUq-TKrsDI0pUEk-Ptl6FcpCLsC6vSt&_nc_ohc=DBjHGA4wYCsAX8pe-ew&_nc_ht=scontent.fmnl17-5.fna&oh=00_AfBHk1KJyuyYYudoLhdAEbBXFsCnFU6BdIaUrju7O3Zg8w&oe=64B2B5BB');
+          image.attr('src', 'https://scontent.fmnl30-1.fna.fbcdn.net/v/t39.30808-6/346659050_275204754893305_5914072027508400750_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFfiw7uhVCO-9f45vLim02EnU5sbcD5G06dTmxtwPkbTjq0aJhLnzrzaoV2KXPcUvFxiiv4szX3ocMkFDUCuqL6&_nc_ohc=43doaVGN8xgAX83IeJj&_nc_ht=scontent.fmnl30-1.fna&oh=00_AfB4Ctji-Uvv_TNpzjbwZAPyfXisz7CwmiJkFWnzy8BFSQ&oe=64CE653B');
           // Fade in the new image
           image.fadeIn(500);
         });
