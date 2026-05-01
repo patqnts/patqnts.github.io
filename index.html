@@ -1,283 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>patqnts | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="header.css">
-  <link rel="stylesheet" href="projects.css">
-  <link rel="stylesheet" href="contact.css">
-  <link rel="stylesheet" href="about.css">  <!-- External CSS file to style your website -->
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-**************" crossorigin="anonymous" />
-
-
+  <meta name="description" content="John Patrick Quintos portfolio: software engineering, game development, web systems, APIs, mobile apps, desktop apps, and management systems.">
+  <title>John Patrick Quintos | Software Engineer and Game Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Moirai+One&display=swap" rel="stylesheet">
-
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header id="main-header">
-    <input type="checkbox" id="menu-toggle" />
-    <label for="menu-toggle" class="hamburger"></label>
-    <nav>
-      <ul>
-        <li><a href="#home">.home()</a></li>
-        <li><a href="#about">.about()</a></li>
-        <li><a href="#portfolio">.projects()</a></li>
-        <li><a href="#contact">.contact()</a></li>
-      </ul>
-
-      <div class="toggle-button">
-        <input type="checkbox" id="day-night-toggle" checked/>
-        <label for="day-night-toggle"></label>
-      </div>
-    
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="John Patrick Quintos home">
+      <span class="brand-mark">JQ</span>
+      <span>patqnts</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#stack">Stack</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
-  
-  
 
-  
-
-  <section id="home">
-    <div class="container">
-      <h1>Hello! <span class="wave">👋</span></h1>
-      <h1>I'm <span class="orange-text">John Patrick </span></h1>
-      <p><span class="software">Software Engineer</span> and <span class="game-developer">Game Developer</span>. Looking forward to work with you.</p>
-
-      <div class="social-icons">
-        <a href="mailto:jhnpatqnts@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-        <a href="https://github.com/patqnts" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/john-patrick-quintos-953219259/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://jon-quin.itch.io" target="_blank"><i class="fa fa-gamepad"></i></a>
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">Software Engineer / Game Developer</p>
+        <h1>I build apps, games, and web systems.</h1>
+        <p class="hero-text">
+          I am John Patrick Quintos, a software engineer adept at building web systems, applications,
+          and Unity/C# game experiences.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">View projects</a>
+          <a class="button secondary" href="mailto:jhnpatqnts@gmail.com">Start a project</a>
+        </div>
       </div>
-    </div>
-  </section>
-  
-  <section id="about">
-    <div class="container">
-      <h1>About Me</h1>
-      <div class="grid-container">
-        <div class="grid-item">
-          <div class="image-container">
-            <img src="media/dark-image.jpg" alt="Your Image">
-          
+      <div class="hero-panel" aria-label="Portfolio highlights">
+        <img class="profile-photo" src="media/dark-image.jpg" alt="John Patrick Quintos profile artwork">
+        <div class="status-card">
+          <span class="status-label">Focus</span>
+          <strong>Unity, C#, web apps, APIs, management systems</strong>
+        </div>
+        <div class="metric-grid">
+          <div>
+            <strong>10+</strong>
+            <span>game projects</span>
+          </div>
+          <div>
+            <strong>150+</strong>
+            <span>websites</span>
+          </div>
+          <div>
+            <strong>3 yrs</strong>
+            <span>Unity/C#</span>
           </div>
         </div>
-        
-        <div class="grid-item">
-          <div class="content">
-            <p>I'm a software engineer and game developer with a strong proficiency in <i class="fab fa-csharp"></i> C#. I specialize in game development using <i class="fab fa-unity"></i> Unity. I'm constantly expanding my skills and currently focused on furthering my expertise in game and software development. With a collaborative mindset and a passion for creating immersive experiences, I'm excited to connect with fellow developers and enthusiasts to explore new possibilities and drive innovation in the world of technology.</p>
-            <div class="grid-item">
-              <div class="content">
-                <p><i class="fas fa-user"></i> Name: John Patrick Quintos</p>
-                <p><i class="fas fa-graduation-cap"></i> Education: STI College Caloocan - BSIT</p>
-              </div>
+      </div>
+    </section>
+
+    <section class="section split" id="services">
+      <div>
+        <p class="eyebrow">What I Make</p>
+        <h2>Full-stack software plus game development.</h2>
+        <p class="section-lead">
+          My portfolio covers client-ready systems and playable experiences: public websites, admin tools,
+          APIs, desktop utilities, mobile apps, and Unity games for Android, web, and learning-focused use cases.
+        </p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card">
+          <span>01</span>
+          <h3>Web Systems</h3>
+          <p>APIs, dashboards, CRUD systems, admin panels, booking flows, and web management systems.</p>
+        </article>
+        <article class="service-card">
+          <span>02</span>
+          <h3>Websites</h3>
+          <p>Responsive business sites, foundation pages, static landing pages, and hosted portfolio pages.</p>
+        </article>
+        <article class="service-card">
+          <span>03</span>
+          <h3>Applications</h3>
+          <p>Desktop applications, mobile applications, data tools, and software built around real workflows.</p>
+        </article>
+        <article class="service-card">
+          <span>04</span>
+          <h3>Games</h3>
+          <p>2D games, 3D games, AR experiences, Android releases, and games connected to web management tools.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">Selected Work</p>
+        <h2>Projects across games, web, mobile, and systems.</h2>
+      </div>
+
+      <div class="featured-grid">
+        <article class="project-card featured">
+          <div class="project-media image-cover">
+            <img src="media/projects/Horned%20Struggler/hs.jpg" alt="Horned Struggler game cover">
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span>Unity</span>
+              <span>Android</span>
+              <span>2D Game</span>
             </div>
-            
+            <h3>Horned Struggler</h3>
+            <p>Personal passion project built to sharpen game development skills and released on Google Play / itch.io.</p>
+            <a href="https://jon-quin.itch.io/horned-struggler" target="_blank" rel="noopener">Open project</a>
           </div>
-        </div>
-        
-        
-        
-        <div class="grid-item">
-          <a href="media/my_resume.pdf" target="_blank">
-              Download Resume <i class="fas fa-file"></i>
-          </a>
-      </div>
-      
-        
-      <div class="grid-item">
-        <div class="animation-container">
-          <img src="media/Slime-pink.gif" alt="Animated GIF" onclick="animateAttack(this)">
-        </div>
-        <div class="animation-container2">
-          <img src="media/slime2.gif" alt="Animated GIF" onclick="animateAttack(this)">
-        </div>
-        <div class="animation-container3">
-          <img src="media/slime3.gif" alt="Animated GIF" onclick="animateAttack(this)">
-        </div>
-        <div class="animation-container4">
-          <img src="media/slime4.gif" alt="Animated GIF" onclick="animateAttack(this)">
-        </div>
-      </div>
-      
+        </article>
 
-      </div>
-
-      <div class="grid-item skills-bar">
-        <div class="skills-container">
-          <div class="skill">
-            <img src="https://img.icons8.com/?size=1x&id=45490&format=png">
+        <article class="project-card featured">
+          <div class="project-media image-cover">
+            <img src="media/aris.PNG" alt="ARIS augmented reality storybook gameplay">
           </div>
-          <div class="skill">
-            <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/360113985_178178028437073_8649094979741003394_n.png?stp=cp0_dst-png&_nc_cat=103&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeFiJa7JBkmGS281JJvhMgbDAPMKDQORbdMA8woNA5Ft09U5d8MeSBk9xYMuKSTvbt7yFXM9eSYWCtcqzJjGhmne&_nc_ohc=JkF-Q4_e9NUAX9FQTn1&_nc_ht=scontent.fmnl17-3.fna&oh=03_AdTKArQv9CaL0McnHd7k7iM4HIz6U0aeq--w0oeFd9b9sw&oe=64D63CE9"> 
-          </div>
-          <div class="skill">
-            <img src="https://img.icons8.com/?size=1x&id=20909&format=png" alt="HTML5"> 
-          </div>
-          <div class="skill">
-            <img src="https://img.icons8.com/?size=1x&id=7gdY5qNXaKC0&format=png" alt="CSS"> 
-          </div>
-          <div class="skill">
-            <img src="https://img.icons8.com/?size=1x&id=108784&format=png" alt="JavaScript"> 
-          </div>
-          <div class="skill">
-            <img src="https://img.icons8.com/?size=1x&id=13441&format=png" alt="Python"> 
-          </div>
-          <div class="skill">
-            <img src="https://img.icons8.com/?size=1x&id=39855&format=png" alt="SQL"> 
-          </div>
-          <div class="skill">
-            <img src="https://img.icons8.com/?size=1x&id=1BC75jFEBED6&format=png" alt=".NET"> 
-          </div>
-          <div class="skill">
-            <img src="https://img.icons8.com/?size=1x&id=48455&format=png" alt="VS Studio"> 
-          </div>
-          <div class="skill">
-            <img src="https://img.icons8.com/?size=1x&id=0OQR1FYCuA9f&format=png" alt="VS Studio"> 
-          </div>
-          <div class="skill">
-            <img src="https://img.icons8.com/?size=1x&id=13664&format=png" alt="wp"> 
-          </div>
-          <div class="skill">
-            <img src=" https://img.icons8.com/?size=1x&id=20906&format=png" alt="git"> 
-          </div>
-         
-        </div>
-      </div>
-      
-    </div>
-  </section>
-   
-  <section id="portfolio">
-    <div class="container">
-      <div class="portfolio-heading">
-        <h1>Projects</h1>
-        <p>- My notable works - </p>
-      </div>
-      <div class="portfolio-items">
-        <!-- Add your portfolio items here -->
-        
-        <a href="https://lifestyletravel.ph" target="_blank">
-
-          <div class="portfolio-item">
-              <img src="media/project1image.PNG" alt="Project 1">
-              <div class="item-details">
-                  <div class="item-details-content">
-                      <h4>Lifestyletravel.ph</h3>
-                      <div class="project-icons">
-                        <div class="skill">
-                          <img src="https://img.icons8.com/?size=1x&id=13664&format=png">
-                        </div>
-                        <div class="skill">
-                          <img src="https://img.icons8.com/?size=1x&id=20909&format=png" alt="HTML5"> 
-                        </div>
-                        <div class="skill">
-                          <img src="https://img.icons8.com/?size=1x&id=7gdY5qNXaKC0&format=png" alt="CSS"> 
-                        </div>
-                        <div class="skill">
-                          <img src="https://img.icons8.com/?size=1x&id=108784&format=png" alt="JavaScript"> 
-                        </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </a>
-      <a href="https://www.youtube.com/watch?v=7o5v23IIYuo&t=83s&ab_channel=JonQuin" target="_blank">
-        <div class="portfolio-item">
-        
-          <div class="slideshow-containers">
-            <img class="slideshow-items" src="media/aris.PNG" alt="Project 1">
-            <img class="slideshow-items" src="media/aris2.PNG" alt="Project 2">
-            <img class="slideshow-items" src="media/aris3.PNG" alt="Project 3">
-            <img class="slideshow-items" src="media/aris4.PNG" alt="Project 4">
-          </div>
-          <div class="item-details">
-            <div class="item-details-content">
-              <h4>Augmented Reality Storybook</h3>
-              <div class="project-icons">
-                <div class="skill">
-                  <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/360113985_178178028437073_8649094979741003394_n.png?stp=cp0_dst-png&_nc_cat=103&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeFiJa7JBkmGS281JJvhMgbDAPMKDQORbdMA8woNA5Ft09U5d8MeSBk9xYMuKSTvbt7yFXM9eSYWCtcqzJjGhmne&_nc_ohc=JkF-Q4_e9NUAX9FQTn1&_nc_ht=scontent.fmnl17-3.fna&oh=03_AdTKArQv9CaL0McnHd7k7iM4HIz6U0aeq--w0oeFd9b9sw&oe=64D63CE9"> 
-                </div>
-                <div class="skill">
-                  <img src="https://img.icons8.com/?size=1x&id=45490&format=png">
-                </div>
-                <div class="skill">
-                  <img src=" https://img.icons8.com/?size=1x&id=20906&format=png" alt="git"> 
-                </div>
-                <div class="skill">
-                  <img src="https://scontent.fmnl17-4.fna.fbcdn.net/v/t1.15752-9/360068931_283849130888328_4115084759223177660_n.png?stp=cp0_dst-png&_nc_cat=104&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeGHBGrjAHoPRVOi8Hnm8YvhAHyZlkMDj4kAfJmWQwOPiZMIWY5qoRHlF0icraJ5TQ9IzqZFwrpVYKr6-oHvy5G6&_nc_ohc=JKJL-TaNzr4AX8-x1ca&_nc_ht=scontent.fmnl17-4.fna&oh=03_AdSsKWO0YQ5Cy37Ddsg6aieT7fb0Xjon-dpTS6b5kTfTsA&oe=64D63334" class="vuforia">
-                </div>
-                
-              </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span>AR</span>
+              <span>Unity</span>
+              <span>Capstone</span>
             </div>
+            <h3>ARIS: Augmented Reality Interactive Storybook</h3>
+            <p>Award-winning IT capstone where I initiated the idea and served as main developer.</p>
+            <a href="https://www.youtube.com/watch?v=7o5v23IIYuo" target="_blank" rel="noopener">Watch demo</a>
           </div>
-        </div>
-      </a>
+        </article>
+      </div>
 
-  <a href="https://jon-quin.itch.io/horned-struggler" target="_blank">
-              <div class="portfolio-item">
-                <div class="slideshow-container">
-                  <img class="slideshow-item" src="horned/cover.jpg" alt="Project 1">
-                  <img class="slideshow-item" src="horned/1.jpg" alt="Project 2">
-                  <img class="slideshow-item" src="horned/2.jpg" alt="Project 3">
-                  <img class="slideshow-item" src="horned/3.png" alt="Project 4">
-                </div>
-                <div class="item-details">
-                  <div class="item-details-content">
-                    <h4>Horned Struggler</h4>
-                    <div class="project-icons">
-                      <div class="skill">
-                        <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/360113985_178178028437073_8649094979741003394_n.png?stp=cp0_dst-png&_nc_cat=103&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeFiJa7JBkmGS281JJvhMgbDAPMKDQORbdMA8woNA5Ft09U5d8MeSBk9xYMuKSTvbt7yFXM9eSYWCtcqzJjGhmne&_nc_ohc=JkF-Q4_e9NUAX9FQTn1&_nc_ht=scontent.fmnl17-3.fna&oh=03_AdTKArQv9CaL0McnHd7k7iM4HIz6U0aeq--w0oeFd9b9sw&oe=64D63CE9"> 
-                      </div>
-                      <div class="skill">
-                        <img src="https://img.icons8.com/?size=1x&id=45490&format=png">
-                      </div>
-                      <div class="skill">
-                        <img src=" https://img.icons8.com/?size=1x&id=20906&format=png" alt="git"> 
-                      </div>
-                      <div class="skill">
-                        <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/360573202_1933846346996305_6895011771818354272_n.png?stp=cp0_dst-png&_nc_cat=106&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeHpZbRYnA6hyTHfhlSIbW26faakvbLCo5B9pqS9ssKjkJTIlYGpio7iLJDcTbGjmojWuqPfAUZ6_6yeBSzNIZ4t&_nc_ohc=X2dPQrouhMEAX8wIwxE&_nc_ht=scontent.fmnl17-3.fna&oh=03_AdRIG-yT9JQVvgZ2mDaBlz8d5fuQ2ILdHWQ_lSHs4d-DGQ&oe=64D62149" alt="git"> 
-                      </div>
-
-                      
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <div class="project-list">
+        <article class="project-card">
+          <div class="project-media image-cover">
+            <img src="media/projects/Tumbang%20preso%20endless/13.png" alt="Tumbang Preso Endless gameplay preview">
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span>Unity</span>
+              <span>Mobile</span>
+              <span>2025-present</span>
             </div>
+            <h3>Tumbang Preso: Endless</h3>
+            <p>Mobile game project and my most successful work to date, with mainstream media coverage and article features.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.jonquin.tumbangpreso" target="_blank" rel="noopener">Google Play</a>
           </div>
-  </section>
-  </a>
- 
-  <section id="contact">
-    <div class="container">
-        <h1>Contact Me</h1>
-        <form action="https://mail.google.com/mail/u/0/?view=cm" method="POST" target="_blank">
-            <input type="hidden" name="to" value="jhnpatqnts@gmail.com">
-            <input type="hidden" name="subject" value="Contact Form Submission">
-            <input type="hidden" name="message" value="">
-            <input type="hidden" name="cc" value="">
-            <input type="hidden" name="bcc" value="">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <input type="text" name="subject" placeholder="Subject" required>
-            <textarea name="body" placeholder="Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
-</section>
-  <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        </article>
 
-  <script src="script.js"></script> <!-- External JavaScript file for scrolling and fading effect -->
+        <article class="project-card">
+          <div class="project-media image-cover">
+            <img src="media/projects/Lore%20of%20Gugurang/10.png" alt="The Lore of Gugurang and Asuang gameplay preview">
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span>Unity</span>
+              <span>Freelance</span>
+              <span>Story Game</span>
+            </div>
+            <h3>The Lore of Gugurang and Asuang</h3>
+            <p>Story-driven thesis game set in Bicol folklore. Built as the hired game developer for a capstone team.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media image-cover">
+            <img src="media/projects/LingoLingo/3.png" alt="LingoLingo village exploration gameplay preview">
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span>Unity</span>
+              <span>3D</span>
+              <span>Freelance</span>
+            </div>
+            <h3>LingoLingo</h3>
+            <p>Open-world third-person game where players explore a village, meet NPCs, and complete quests through interactions.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media image-cover">
+            <img src="media/projects/BCON/3.png" alt="B CON top-down pixel game preview">
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span>Unity</span>
+              <span>2D</span>
+              <span>Mobile</span>
+            </div>
+            <h3>B CON</h3>
+            <p>Top-down pixel art mobile game about school tasks, waste segregation, NPC interactions, and action encounters.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media image-contain">
+            <img src="media/projects/safespace/ssssssssssssssss.png" alt="SafeSpace mobile app preview">
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span>Decision Game</span>
+              <span>Learning App</span>
+              <span>Freelance</span>
+            </div>
+            <h3>SafeSpace</h3>
+            <p>School-exclusive learning application with decision-based story games about student challenges and guided outcomes.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media project-preview villa-preview" aria-label="Villa Anela website preview">
+            <span class="preview-bar"></span>
+            <strong>Villa Anela</strong>
+            <span>Gallery / Villa / Booking</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span>React</span>
+              <span>Website</span>
+              <span>Booking Flow</span>
+            </div>
+            <h3>Villa Anela Website</h3>
+            <p>Luxury tropical villa website for Puerto Princesa, Palawan with gallery, villa details, contact page, and booking request flow.</p>
+            <a href="https://villa-anelagithubio.vercel.app/" target="_blank" rel="noopener">Visit site</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media project-preview foundation-preview" aria-label="One Child One Future Foundation website preview">
+            <span class="preview-bar"></span>
+            <strong>One Child One Future</strong>
+            <span>Foundation / Website / Protected Preview</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span>Foundation</span>
+              <span>Website</span>
+              <span>Protected Preview</span>
+            </div>
+            <h3>One Child One Future Foundation</h3>
+            <p>Foundation website project included as a web portfolio piece. The shared Vercel URL is currently protected by authentication.</p>
+            <a href="https://one-child-one-future-foundation-9v9omaavo-patqnts-projects.vercel.app/" target="_blank" rel="noopener">Open preview</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section stack-section" id="stack">
+      <div class="section-heading">
+        <p class="eyebrow">Tools and Skills</p>
+        <h2>Built with the stack each project needs.</h2>
+      </div>
+      <div class="stack-grid">
+        <span>Unity</span>
+        <span>C#</span>
+        <span>AR / Vuforia</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>APIs</span>
+        <span>SQL</span>
+        <span>WPF</span>
+        <span>XAML</span>
+        <span>MVVM</span>
+        <span>Android</span>
+        <span>Desktop Apps</span>
+        <span>Git</span>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Let us build something useful, playable, or both.</h2>
+        <p class="section-lead">
+          Available for websites, APIs, management systems, desktop applications, mobile applications,
+          Unity games, and mixed game-plus-web projects.
+        </p>
+      </div>
+      <div class="contact-card">
+        <a href="mailto:jhnpatqnts@gmail.com">jhnpatqnts@gmail.com</a>
+        <a href="mailto:jonquin.dev@gmail.com">jonquin.dev@gmail.com</a>
+        <a href="https://github.com/patqnts" target="_blank" rel="noopener">github.com/patqnts</a>
+        <a href="https://www.linkedin.com/in/patqnts/" target="_blank" rel="noopener">linkedin.com/in/patqnts</a>
+        <a href="https://jon-quin.itch.io" target="_blank" rel="noopener">jon-quin.itch.io</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
